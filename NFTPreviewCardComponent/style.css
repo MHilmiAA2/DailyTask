@@ -1,86 +1,86 @@
 body {
-    margin: 0;
     font-family: sans-serif;
+    margin: 0
 }
 
 main {
-    background-color: #0d1a2d;
-    color: white;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: #0d1a2d;
+    color: #fff;
+    display: flex;
     height: 100vh;
-    width: 100vw;
+    justify-content: center;
+    width: 100vw
 }
 
 section {
     background-color: #15273f;
-    padding: 1rem;
-    max-width: 18rem;
-    max-height: 40rem;
     border-radius: 2rem;
     display: inline-block;
+    max-height: 40rem;
+    max-width: 18rem;
+    padding: 1rem
 }
 
-section div:nth-child(1) {
-    text-align: center;
+section div:first-child {
+    text-align: center
 }
 
 section div img.imgNFT {
-    width: 290px;
+    border-radius: 1rem;
     height: 200px;
     object-fit: cover;
-    border-radius: 1rem;
+    width: 290px
 }
 
+section div:first-child img.imgNFT,
 section div:nth-child(2) h1.title,
-section div:nth-child(4) span,
-section div:nth-child(1) img.imgNFT {
-    cursor: pointer;
+section div:nth-child(4) span {
+    cursor: pointer
 }
 
 section div:nth-child(2) h1.title,
 section div:nth-child(4) span {
-    color: white;
-    transition: color 0.3s;
+    color: #fff;
+    transition: color .3s
 }
 
 section div:nth-child(2) h1.title:hover,
 section div:nth-child(4) span:hover {
-    color: #40d8ed;
+    color: #40d8ed
 }
 
 section div:nth-child(3) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 section div:nth-child(3) p.balance {
     color: #40d8ed;
-    font-weight: bold;
+    font-weight: 700
 }
 
 section div:nth-child(3) p.date {
     color: gray;
-    font-style: italic;
+    font-style: italic
 }
 
 section div:nth-child(4) {
-    display: flex;
     align-items: center;
-    gap: 1rem;
+    display: flex;
+    gap: 1rem
 }
 
 section div:nth-child(4) img {
-    height: 50px;
+    border: 2px solid;
     border-radius: 100%;
-    border: solid 2px;
+    height: 50px
 }
 
 section div:nth-child(4) p {
-    color: gray;
+    color: gray
 }
 
 section div:nth-child(4) span {
-    font-weight: bold;
+    font-weight: 700
 }
