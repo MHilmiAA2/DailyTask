@@ -1,5 +1,5 @@
 body {
-    background: #f4f4f4;
+    background: #f5d04e;
 }
 
 div {
@@ -30,8 +30,8 @@ div {
 
 .blog-card .tag {
     margin: 0 16px;
-    background-color: rgba(138, 43, 226, 0.2);
-    color: rgb(138, 43, 226);
+    background-color: #f2d24b;
+    color: #000;
     font-weight: bold;
     padding: 4px 16px;
     border-radius: 10px;
