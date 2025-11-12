@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #141414;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+div.card-profile {
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    transition: flex-direction 0.5s ease-in-out;
+}
+
+section div img {
+    border-radius: 10px;
+    height: 250px;
+    width: auto;
+}
+
+div.card-profile section {
+    align-items: center;
+}
+
+div.card-profile section div .nama {
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+div.card-profile section div .alamat {
+    margin: 0px 0px 10px 0px;
+    text-align: left;
+    color: yellow;
+}
+
+div.card-profile section div .sosialMedia {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div.card-profile section div .sosialMedia li {
+    margin: auto;
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: #333;
+    transition: background, scale 0.3s ease-in-out;
+}
+
+div.card-profile section div .sosialMedia li:hover {
+    background: #555;
+    scale: 1.05;
+}
+
+@media (max-width: 720px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.card-profile section div .nama,
+    div.card-profile section div .alamat {
+        text-align: center;
+    }
+}
