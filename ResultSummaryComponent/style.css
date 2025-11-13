@@ -1,0 +1,128 @@
+body {
+    background-color: #ecf2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+section div.hasil {
+    background: linear-gradient(#694cf0, #2c2cec);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section div.hasil,
+section div.detail {
+    width: 250px;
+    padding: 20px;
+}
+
+section div.hasil h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+section div.hasil div.score {
+    text-align: center;
+    background-image: linear-gradient(rgba(10, 10, 121, 0.5), rgba(0, 0, 0, 0));
+    width: 100px;
+    height: 100px;
+    display: block;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+section div.hasil div.score p:nth-child(1) {
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+}
+
+section div.hasil div.score p:nth-child(2) {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+section div.hasil h2 {
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+section div.hasil p.desc {
+    margin-top: -15px;
+    width: 220px;
+    color: #bbb;
+}
+
+section div.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+section div.detail h1 {
+    font-size: 24px;
+}
+
+section div.detail div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+
+section div.detail div:nth-child(2) {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: rgba(255, 0, 0, 1);
+}
+
+section div.detail div:nth-child(3) {
+    background-color: rgba(255, 255, 0, 0.1);
+    color: rgb(122, 122, 0);
+}
+
+section div.detail div:nth-child(4) {
+    background-color: rgba(0, 255, 0, 0.1);
+    color: green;
+}
+
+section div.detail div:nth-child(5) {
+    background-color: rgba(0, 0, 255, 0.1);
+    color: purple;
+}
+
+section div.detail button {
+    border: none;
+    background-color: #303b59;
+    color: white;
+    padding-block: 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+@media (max-width: 425px) {
+    section {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
