@@ -118,6 +118,11 @@ section div.detail button {
     padding-block: 15px;
     border-radius: 30px;
     margin-top: 20px;
+    transition: transform 0.25s;
+}
+
+section div.detail button:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 425px) {

@@ -9,15 +9,15 @@ body {
 
 section {
     border: solid 1px;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 25px;
-    max-width: 300px;
+    max-width: 325px;
     background-color: #fff;
     box-shadow: 6px 6px 0 ;
 }
 
 section img.imgNews {
-    width: 300px;
+    width: 324px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
@@ -37,6 +37,16 @@ section p.date {
     color: gray;
 }
 
+section h1.judul {
+    color: black;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+}
+
+section h1.judul:hover {
+    color: #f5d04e;
+}
+
 section div {
     display: flex;
     gap: 10px;
@@ -46,4 +56,5 @@ section div {
 
 section div img.imgProfile {
     border-radius: 100%;
+    height: 40px;
 }
